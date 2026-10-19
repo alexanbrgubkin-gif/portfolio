@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Врачи — Дентамир</title>
+<meta name="description" content="Врачи стоматологии «Дентамир»: опытные специалисты по лечению, имплантации и ортодонтии.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo">🦷 Дента<span class="dot">мир</span></a>
+    <nav class="nav-links" id="menu">
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги и цены</a>
+      <a href="doctors.html" class="active">Врачи</a>
+      <a href="gallery.html">Клиника</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="contacts.html" class="btn" style="padding:11px 22px">Записаться</a>
+    </nav>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Главная</a> / Врачи</div>
+    <h1>Наши врачи</h1>
+    <p>Команда специалистов с опытом 10–20 лет. Регулярно повышаем квалификацию и следим за новыми методиками.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="docs">
+      <div class="doc reveal"><div class="photo">👩‍⚕️</div><div class="in"><h3>Анна Соколова</h3><div class="role">Главный врач · терапевт</div><p>Стаж 20 лет. Лечение любой сложности, эстетическая реставрация. Кандидат медицинских наук.</p></div></div>
+      <div class="doc reveal"><div class="photo">👨‍⚕️</div><div class="in"><h3>Михаил Орлов</h3><div class="role">Хирург-имплантолог</div><p>Стаж 15 лет. Более 5 000 установленных имплантов. Сложные случаи и костная пластика.</p></div></div>
+      <div class="doc reveal"><div class="photo">👩‍⚕️</div><div class="in"><h3>Елена Громова</h3><div class="role">Ортодонт</div><p>Стаж 12 лет. Брекет-системы и элайнеры. Исправление прикуса у взрослых и детей.</p></div></div>
+      <div class="doc reveal"><div class="photo">👨‍⚕️</div><div class="in"><h3>Дмитрий Белов</h3><div class="role">Ортопед</div><p>Стаж 14 лет. Протезирование и коронки. Восстановление зубов с нуля.</p></div></div>
+      <div class="doc reveal"><div class="photo">👩‍⚕️</div><div class="in"><h3>Мария Зайцева</h3><div class="role">Детский стоматолог</div><p>Стаж 10 лет. Находит подход к любому ребёнку. Лечение без слёз и страха.</p></div></div>
+      <div class="doc reveal"><div class="photo">👩‍⚕️</div><div class="in"><h3>Ольга Кравцова</h3><div class="role">Гигиенист</div><p>Стаж 8 лет. Профессиональная чистка, Air Flow, обучение гигиене.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="why">
+      <div class="f reveal"><div class="ic">🎓</div><h3>Опыт 8–20 лет</h3><p>Каждый врач — проверенный специалист</p></div>
+      <div class="f reveal"><div class="ic">📚</div><h3>Повышаем квалификацию</h3><p>Курсы и конференции каждый год</p></div>
+      <div class="f reveal"><div class="ic">🤝</div><h3>Свой врач</h3><p>Ведёт вас от диагностики до результата</p></div>
+      <div class="f reveal"><div class="ic">💬</div><h3>Всё объясняем</h3><p>Без непонятных терминов и навязывания</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap reveal"><div class="ctabox"><h2>Запишитесь к своему врачу</h2><p>Выберите специалиста и удобное время</p><a href="contacts.html" class="btn">Записаться</a></div></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="logo">🦷 Дентамир</div><p>Стоматология, которой доверяют улыбки с 2009 года.</p></div>
+      <div><h4>Меню</h4><a href="services.html">Услуги и цены</a><a href="doctors.html">Врачи</a><a href="gallery.html">Клиника</a><a href="contacts.html">Контакты</a></div>
+      <div><h4>Контакты</h4><a href="tel:+74951005050">+7 (495) 100-50-50</a><a>Москва, ул. Здоровья, 5</a><a>Ежедневно 9:00–21:00</a></div>
+    </div>
+    <div class="foot-bot">© 2026 Стоматология «Дентамир». Демонстрационный сайт.</div>
+  </div>
+</footer>
+
+<button id="chatBtn" onclick="toggleChat()">💬</button>
+<div id="chat">
+  <div class="chat-head"><div class="av">🦷</div><div><b>Администратор</b><span>Онлайн · ответит сразу</span></div></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chips" id="chips"></div>
+  <div class="chat-input">
+    <input id="chatInput" placeholder="Напишите вопрос..." onkeydown="if(event.key==='Enter')sendChat()">
+    <button onclick="sendChat()">➤</button>
+  </div>
+</div>
+<script src="js/app.js"></script>
+<div style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 Arial,sans-serif;text-align:center;padding:6px">Демо-сайт для портфолио — компания вымышленная. Разработка: Александр Выскребенцев</div></body>
+</html>

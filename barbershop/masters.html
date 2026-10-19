@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Мастера — BRÜDER</title>
+<meta name="description" content="Барберы BRÜDER: опытные мастера мужских стрижек и бритья в центре Москвы.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Jost:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo">BRÜDER<span>.</span></a>
+    <nav class="nav-links" id="menu">
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="masters.html" class="active">Мастера</a>
+      <a href="gallery.html">Работы</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="contacts.html" class="btn" style="padding:11px 22px;color:#17120b">Записаться</a>
+    </nav>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Главная</a> / Мастера</div>
+    <h1>Наша команда</h1>
+    <p>Мастера, для которых барберинг — не работа, а ремесло. Запишитесь к любому — не ошибётесь.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="masters">
+      <div class="master reveal">
+        <div class="photo">И</div>
+        <h3>Игорь</h3><div class="role">Топ-барбер · основатель</div>
+        <p>12 лет за креслом. Чемпион городского конкурса барберов 2024. Специализация — классические мужские стрижки и сложные фейды.</p>
+      </div>
+      <div class="master reveal">
+        <div class="photo">С</div>
+        <h3>Станислав</h3><div class="role">Барбер</div>
+        <p>10 лет опыта. Мастер классических стрижек и работы с опасной бритвой. Королевское бритьё в его исполнении — отдельный ритуал.</p>
+      </div>
+      <div class="master reveal">
+        <div class="photo">Р</div>
+        <h3>Руслан</h3><div class="role">Барбер-стилист</div>
+        <p>8 лет опыта. Современные фейды, текстурные и модельные стрижки. Поможет подобрать образ под форму лица и тип волос.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="why reveal">
+      <div><div class="ic">🏆</div><h3>Опыт 8–12 лет</h3><p>Каждый мастер прошёл профессиональное обучение</p></div>
+      <div><div class="ic">✂️</div><h3>Регулярно учимся</h3><p>Следим за трендами и техниками</p></div>
+      <div><div class="ic">🤝</div><h3>Свой мастер</h3><p>Можно записаться к конкретному барберу</p></div>
+      <div><div class="ic">💯</div><h3>Гарантия</h3><p>Не понравилось — переделаем бесплатно</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap reveal">
+    <h2>Запишитесь к своему мастеру</h2>
+    <p>Выберите барбера и удобное время онлайн</p>
+    <a href="contacts.html" class="btn">Записаться</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="logo">BRÜDER<span>.</span></div><p>Барбершоп для тех, кто ценит качество и атмосферу. С 2016 года.</p></div>
+      <div><h4>Меню</h4><a href="services.html">Услуги</a><a href="masters.html">Мастера</a><a href="gallery.html">Работы</a><a href="contacts.html">Контакты</a></div>
+      <div><h4>Контакты</h4><a href="tel:+79001112233">+7 (900) 111-22-33</a><a>Москва, ул. Тверская, 18</a><a>Ежедневно 10:00–22:00</a></div>
+    </div>
+    <div class="foot-bot">© 2026 Барбершоп BRÜDER. Демонстрационный сайт.</div>
+  </div>
+</footer>
+
+<button id="chatBtn" onclick="toggleChat()">💬</button>
+<div id="chat">
+  <div class="chat-head"><div class="av">💈</div><div><b>Администратор</b><span>Онлайн</span></div></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chips" id="chips"></div>
+  <div class="chat-input">
+    <input id="chatInput" placeholder="Напишите вопрос..." onkeydown="if(event.key==='Enter')sendChat()">
+    <button onclick="sendChat()">➤</button>
+  </div>
+</div>
+<script src="js/app.js"></script>
+<div style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 Arial,sans-serif;text-align:center;padding:6px">Демо-сайт для портфолио — компания вымышленная. Разработка: Александр Выскребенцев</div></body>
+</html>

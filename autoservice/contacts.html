@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Контакты и запись — ГаражПро</title>
+<meta name="description" content="Запись в автосервис «ГаражПро», адрес, телефон и часы работы.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo">ГАРАЖ<span>ПРО</span></a>
+    <nav class="nav-links" id="menu">
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="about.html">О сервисе</a>
+      <a href="gallery.html">Работы</a>
+      <a href="contacts.html" class="active">Контакты</a>
+      <a href="contacts.html" class="btn" style="padding:10px 20px">Записаться</a>
+    </nav>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Главная</a> / Контакты</div>
+    <h1>Контакты и запись</h1>
+    <p>Оставьте заявку — перезвоним в течение 15 минут и подберём удобное время.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="book">
+      <div>
+        <div class="eyebrow">Как нас найти</div>
+        <h2 style="font-size:1.7rem;margin-bottom:22px">Мы ждём вас</h2>
+        <ul class="book-info">
+          <li><span class="ic">📍</span><div><b>Адрес</b><br>г. Москва, ул. Примерная, 10 (въезд со двора)</div></li>
+          <li><span class="ic">🕐</span><div><b>Часы работы</b><br>Пн–Пт 9:00–20:00, Сб 10:00–18:00, Вс — выходной</div></li>
+          <li><span class="ic">📞</span><div><b>Телефон</b><br><a href="tel:+79000000000" style="color:var(--accent)">+7 (900) 000-00-00</a></div></li>
+          <li><span class="ic">✉️</span><div><b>Почта</b><br>service@garagepro.ru</div></li>
+          <li><span class="ic">🅿️</span><div><b>Парковка</b><br>Бесплатная, въезд со двора</div></li>
+        </ul>
+        <div class="map">🗺️ Здесь будет интерактивная карта (Яндекс.Карты)</div>
+      </div>
+      <div class="panel">
+        <h3 style="font-size:1.3rem;margin-bottom:6px">Записаться на сервис</h3>
+        <p style="color:var(--muted);font-size:.92rem;margin-bottom:20px">Перезвоним в течение 15 минут и подберём время.</p>
+        <form onsubmit="bookSubmit(event)">
+          <div class="form-row"><label>Ваше имя</label><input required placeholder="Как к вам обращаться"></div>
+          <div class="form-row"><label>Телефон</label><input required type="tel" placeholder="+7 (___) ___-__-__"></div>
+          <div class="form-row"><label>Марка и модель авто</label><input placeholder="Например: Kia Rio 2017"></div>
+          <div class="form-row"><label>Услуга</label><select><option>Техобслуживание</option><option>Ремонт ходовой</option><option>Ремонт двигателя</option><option>Диагностика</option><option>Шиномонтаж</option><option>Кондиционер</option><option>Другое</option></select></div>
+          <button class="btn" type="submit" style="width:100%;justify-content:center">Отправить заявку</button>
+          <div class="ok-msg" id="okMsg">✓ Заявка принята! Перезвоним в течение 15 минут.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a href="index.html" class="logo">ГАРАЖ<span>ПРО</span></a><p>Автосервис, который работает честно. С 2012 года.</p></div>
+      <div><h4>Меню</h4><a href="services.html">Услуги</a><a href="about.html">О сервисе</a><a href="gallery.html">Работы</a><a href="contacts.html">Контакты</a></div>
+      <div><h4>Контакты</h4><a href="tel:+79000000000">+7 (900) 000-00-00</a><a>Москва, ул. Примерная, 10</a><a>Пн–Сб, с 9:00</a></div>
+    </div>
+    <div class="foot-bot">© 2026 Автосервис «ГаражПро». Демонстрационный сайт.</div>
+  </div>
+</footer>
+
+<button id="chatBtn" onclick="toggleChat()">💬</button>
+<div id="chat">
+  <div class="chat-head"><div class="av">🔧</div><div><b>Онлайн-помощник</b><span>Обычно отвечает сразу</span></div></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chips" id="chips"></div>
+  <div class="chat-input">
+    <input id="chatInput" placeholder="Напишите вопрос..." onkeydown="if(event.key==='Enter')sendChat()">
+    <button onclick="sendChat()">➤</button>
+  </div>
+</div>
+<script src="js/app.js"></script>
+<div style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 Arial,sans-serif;text-align:center;padding:6px">Демо-сайт для портфолио — компания вымышленная. Разработка: Александр Выскребенцев</div></body>
+</html>

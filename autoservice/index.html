@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ГаражПро — автосервис</title>
+<meta name="description" content="Автосервис «ГаражПро»: ремонт, ТО, диагностика, шиномонтаж. Честные цены, гарантия 2 года. Онлайн-запись.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo">ГАРАЖ<span>ПРО</span></a>
+    <nav class="nav-links" id="menu">
+      <a href="index.html" class="active">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="about.html">О сервисе</a>
+      <a href="gallery.html">Работы</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="contacts.html" class="btn" style="padding:10px 20px">Записаться</a>
+    </nav>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">Автосервис в Москве · с 2012 года</div>
+      <h1>Ремонт авто <em>честно</em> и в срок</h1>
+      <p>Диагностика, ТО, ремонт ходовой и двигателя. Фиксируем цену до начала работ — ни рубля сверху. Гарантия 2 года.</p>
+      <div class="hero-cta">
+        <a href="contacts.html" class="btn">Записаться на сервис</a>
+        <a href="services.html" class="btn ghost">Цены и услуги</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>14</b><span>лет на рынке</span></div>
+        <div><b>23 000+</b><span>машин отремонтировано</span></div>
+        <div><b>4.9</b><span>рейтинг на картах</span></div>
+      </div>
+    </div>
+    <div class="hero-card reveal">
+      <h3>⚡ Популярные услуги</h3>
+      <div class="price-row"><span>Замена масла и фильтра</span><span>от 1 500 ₽</span></div>
+      <div class="price-row"><span>Компьютерная диагностика</span><span>1 200 ₽</span></div>
+      <div class="price-row"><span>Замена тормозных колодок</span><span>от 1 400 ₽</span></div>
+      <div class="price-row"><span>Развал-схождение 3D</span><span>2 500 ₽</span></div>
+      <div class="price-row"><span>ТО по регламенту</span><span>от 3 500 ₽</span></div>
+      <a href="services.html" class="btn ghost" style="width:100%;justify-content:center;margin-top:18px">Весь прайс →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Что мы делаем</div><h2>Полный спектр работ</h2><p>От замены лампочки до капремонта двигателя</p></div>
+    <div class="grid3">
+      <div class="card reveal"><div class="ic">🔧</div><h3>Техобслуживание</h3><p>Регламентное ТО, замена жидкостей и расходников по пробегу.</p><div class="p">от 3 500 ₽</div></div>
+      <div class="card reveal"><div class="ic">🛠️</div><h3>Ремонт ходовой</h3><p>Подвеска, амортизаторы, рычаги. Диагностика стука бесплатно.</p><div class="p">от 2 000 ₽</div></div>
+      <div class="card reveal"><div class="ic">⚙️</div><h3>Ремонт двигателя</h3><p>От замены ремня ГРМ до капремонта. Любые марки.</p><div class="p">от 5 000 ₽</div></div>
+      <div class="card reveal"><div class="ic">💻</div><h3>Диагностика</h3><p>Компьютерная диагностика по 30 пунктам с отчётом.</p><div class="p">1 200 ₽</div></div>
+      <div class="card reveal"><div class="ic">🛞</div><h3>Шиномонтаж</h3><p>Сезонная замена, балансировка, ремонт проколов.</p><div class="p">от 2 800 ₽</div></div>
+      <div class="card reveal"><div class="ic">❄️</div><h3>Кондиционер</h3><p>Заправка, чистка системы, проверка на утечки.</p><div class="p">от 2 500 ₽</div></div>
+    </div>
+    <div style="text-align:center;margin-top:34px" class="reveal"><a href="services.html" class="btn ghost">Все услуги и цены →</a></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="why reveal">
+      <div><b>2 года</b><span>гарантия на все работы</span></div>
+      <div><b>0 ₽</b><span>диагностика при ремонте</span></div>
+      <div><b>1 день</b><span>средний срок ремонта</span></div>
+      <div><b>24/7</b><span>онлайн-запись и ответы</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Отзывы</div><h2>Что говорят клиенты</h2></div>
+    <div class="rev">
+      <div class="card reveal"><div class="stars">★★★★★</div><p>Приехал со стуком в подвеске, за час нашли причину, назвали цену и к вечеру всё сделали. Никаких «вылезло ещё вот это».</p><div class="who"><div class="av">А</div><div><b>Алексей</b><span>Kia Rio</span></div></div></div>
+      <div class="card reveal"><div class="stars">★★★★★</div><p>Делаю здесь ТО третий год. Всегда честно, по делу, с отчётом. Напоминают, когда пора на следующее.</p><div class="who"><div class="av">М</div><div><b>Марина</b><span>VW Polo</span></div></div></div>
+      <div class="card reveal"><div class="stars">★★★★★</div><p>Единственный сервис, где не впаривают лишнего. Поменяли только то, что реально нужно. Рекомендую.</p><div class="who"><div class="av">Д</div><div><b>Дмитрий</b><span>Toyota Camry</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap reveal"><div class="ctabox"><h2>Запишитесь на сервис</h2><p>Перезвоним в течение 15 минут и подберём удобное время</p><a href="contacts.html" class="btn">Записаться</a></div></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a href="index.html" class="logo">ГАРАЖ<span>ПРО</span></a><p>Автосервис, который работает честно: фиксируем цену до начала работ и даём гарантию 2 года. С 2012 года.</p></div>
+      <div><h4>Меню</h4><a href="services.html">Услуги</a><a href="about.html">О сервисе</a><a href="gallery.html">Работы</a><a href="contacts.html">Контакты</a></div>
+      <div><h4>Контакты</h4><a href="tel:+79000000000">+7 (900) 000-00-00</a><a>Москва, ул. Примерная, 10</a><a>Пн–Сб, с 9:00</a></div>
+    </div>
+    <div class="foot-bot">© 2026 Автосервис «ГаражПро». Демонстрационный сайт.</div>
+  </div>
+</footer>
+
+<button id="chatBtn" onclick="toggleChat()">💬</button>
+<div id="chat">
+  <div class="chat-head"><div class="av">🔧</div><div><b>Онлайн-помощник</b><span>Обычно отвечает сразу</span></div></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chips" id="chips"></div>
+  <div class="chat-input">
+    <input id="chatInput" placeholder="Напишите вопрос..." onkeydown="if(event.key==='Enter')sendChat()">
+    <button onclick="sendChat()">➤</button>
+  </div>
+</div>
+<script src="js/app.js"></script>
+<div style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:13px/1.4 Arial,sans-serif;text-align:center;padding:6px">Демо-сайт для портфолио — компания вымышленная. Разработка: Александр Выскребенцев</div></body>
+</html>
